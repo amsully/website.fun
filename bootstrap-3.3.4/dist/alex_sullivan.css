@@ -28,6 +28,27 @@ h1 {
   padding: 0 0 10px 30px;
 }
 
+@media (max-width: 979) and (min-width: 768)
+.row {
+  margin-left: -20px;
+}
+
+#business_card header {
+  display: none;
+  zoom: 1;
+  z-index: 5;
+  position: absolute;
+  margin-left: 40px;
+  top:50%;
+  margin-top: -100px;
+}
+
+.container:before, .container:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
   display: table;
