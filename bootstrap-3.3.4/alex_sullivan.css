@@ -59,6 +59,18 @@ h2 {
   padding:0;
 }
 
+/*
+  To be edited based on width.
+*/
+#business_card .name_card h2 .divider{
+ /* display:none;*/
+}
+
+#business_card .name_card h2 .gold{
+  display:block;
+  margin-top:10px;
+}
+
 .container:before, .container:after {
   display: table;
   content: "";
