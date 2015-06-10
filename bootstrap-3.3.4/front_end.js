@@ -4,16 +4,20 @@ $(window).resize(function() {
 
   if( width < 630 )
   {
-  	changePersonalName('Alex_ Sullivan')
+  	changeText('#personal_name','Alex_ Sullivan')
+  	changeText('#job','coder')
+  	changeText('#divider','@')
   }
   else
   {
-  	changePersonalName('Alex_Sullivan')
+  	changeText('#personal_name','Alex_Sullivan')
+  	changeText('#job','coder')
+  	changeText('#divider','|')
   }
 
 });
 
 
-function changePersonalName(changed) {
-    $("#personal_name").html(changed);
+function changeText(tag, changed) {
+    $(tag).html(changed);
 }

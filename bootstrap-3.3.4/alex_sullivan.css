@@ -107,3 +107,15 @@ h2 {
   padding: 30px;
 }
 
+@media(max-width: 630px)
+{
+/*  #business_card .name_card h2 .divider{
+    display:none
+  }*/
+  #business_card .name_card h2 .maroon{
+    position: absolute;
+    display: block;
+    color: #990033;
+    width: 50%;
+  }  
+}
