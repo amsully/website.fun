@@ -1,5 +1,6 @@
 var width;
-$(window).resize(function() {
+
+$(window).on('load resize',function() {
   width = $(window).width();
 
   if( width < 630 )
