@@ -5,7 +5,7 @@
 html,
 body {
   height: 100%;
-  background-color: #333;
+  background-color: #000;
 }
 body {
   color: #fff;
@@ -26,6 +26,8 @@ h1 {
   letter-spacing: 5px;
   margin: 0;
   padding: 0 0 10px 30px;
+  display: inline-block;
+  line-height: 1.5;
 }
 
 h2 {
@@ -33,7 +35,7 @@ h2 {
   font-weight:700;
   font-size:13px;
   line-height:1;
-  color:#fcfcfc;
+  color:#00b000;
   text-transform: lowercase;
   letter-spacing: 2px;
 }
@@ -42,6 +44,7 @@ h2 {
 .row {
   margin-left: -20px;
 }
+
 
 #business_card header {
   display: none;
@@ -64,11 +67,14 @@ h2 {
 */
 #business_card .name_card h2 .divider{
  /* display:none;*/
+  color: #fff;
+  display: inline-block;
 }
 
-#business_card .name_card h2 .gold{
-  display:block;
+#business_card .name_card h2 .maroon{
+  display: inline-block
   margin-top:10px;
+  color: #990033;
 }
 
 .container:before, .container:after {
@@ -100,3 +106,4 @@ h2 {
 .inner {
   padding: 30px;
 }
+
