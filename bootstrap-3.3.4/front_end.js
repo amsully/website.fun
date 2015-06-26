@@ -54,8 +54,8 @@ function stop_music()
 }
 
 function blinker() {
-    $('.blink_me').fadeOut(250);
-    $('.blink_me').fadeIn(250);
+    $('.blink_me').fadeOut(400);
+    $('.blink_me').fadeIn(400);
 }
 
-setInterval(blinker, 1000);
+setInterval(blinker, 1150);
