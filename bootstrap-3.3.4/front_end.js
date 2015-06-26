@@ -5,13 +5,13 @@ $(window).on('load resize',function() {
 
   if( width < 630 )
   {
-  	changeText('#personal_name','Alex_ Sullivan')
+  	// changeText('#personal_name','Alex_ Sullivan')
   	changeText('#job','coder')
   	changeText('#divider','@')
   }
   else
   {
-  	changeText('#personal_name','Alex_Sullivan')
+  	// changeText('#personal_name','Alex_Sullivan')
   	changeText('#job','coder')
   	changeText('#divider','|')
   }
@@ -52,3 +52,10 @@ function stop_music()
   document.getElementById('play').firstChild.pause();
   document.getElementById('play').onclick = play_music();
 }
+
+function blinker() {
+    $('.blink_me').fadeOut(250);
+    $('.blink_me').fadeIn(250);
+}
+
+setInterval(blinker, 1000);
