@@ -5,13 +5,15 @@ $(window).on('load resize',function() {
 
   if( width < 630 )
   {
-  	// changeText('#personal_name','Alex_ Sullivan')
+  	changeText('#first_name','sullivan')
+    changeText('#last_name','')
   	changeText('#job','coder')
   	changeText('#divider','@')
   }
   else
   {
-  	// changeText('#personal_name','Alex_Sullivan')
+  	changeText('#first_name','alex')
+    changeText('#last_name','sullivan')
   	changeText('#job','coder')
   	changeText('#divider','|')
   }
