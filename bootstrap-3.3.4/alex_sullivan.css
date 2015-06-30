@@ -8,7 +8,7 @@ body {
   background-color: #000;
 }
 body {
-  color: #fff;
+  color: #000;
   font-family: "source-code-pro", "Courier New", Courier, mono;
   font-weight: 400;
   font-size: 11px;
@@ -18,13 +18,20 @@ body {
 
 
 header {
-  margin: 10%;
+  background-color: black;
+  width:100%;
+  height:100%;
+}
+
+header .header-information {
+  width:90%;
+  padding-top:50%;
 }
 
 h1 {
   font-family: "Press Start 2P","Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 20;
-  font-size:35px;
+  font-size:20px;
   line-height: 1;
   color: #fcfcfc;
   text-transform: lowercase;
@@ -53,11 +60,13 @@ h4 {
   color:#00b000;
   text-transform: lowercase;
   letter-spacing: 2px;  
+  text-align: center;
 }
 
 a {
   color:#fff;
   font-size: 14px;
+  text-align: center;
 }
 
 
@@ -77,15 +86,55 @@ a {
 #play_button {
   height:80px;
 }
+.home-information {
+  background-color: #141F1F;
+  text-align: center;
+}
 
-@media(max-width: 630px)
+/*@media(max-width: 630px)
 {
 
   h1 {
     font-size:20px; 
   }
   
+}*/
+/*// Default styling here
+
+// Little larger screen*/
+@media only screen and (min-width: 480px) {
+  h1{
+    font-size: 35px;
+  }
+  
+  .homeh4{
+    text-align: left;
+  }
+  .home-information{
+    text-align: left;
+  }
 }
+
+/*// Pads and larger phones*/
+@media only screen and (min-width: 600px) {
+
+}
+
+/*// Larger pads*/
+@media only screen and (min-width: 768px) {
+
+}
+
+/*// Horizontal pads and laptops*/
+@media only screen and (min-width: 992px) {
+
+}
+
+/*// Really large screens*/
+@media only screen and (min-width: 1382px) {
+
+}
+
 
 #display_projects{
   width: 100%;
@@ -133,7 +182,7 @@ a {
  */
  
 body {
-   background: black;
+   background: white;
 }
 #play, #pause, #fwd, #rew {
    width:40px;

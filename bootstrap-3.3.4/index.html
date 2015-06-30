@@ -22,21 +22,25 @@
   </head>
   <body>                                                                
 
-    <header>
+    <header class="container-fluid">
 
-            <div class="row">
-                    <div class="col-sm-8">
-                        <h1 id="personal_name">><span id="first_name">Alex</span><span class="blink_me">_</span><span id="last_name">Sullivan</span></h1>
+            <div class="header-information container">
+                <div class="row">
+                        <div class="col-xs-8 col-sm-3 col-md-4">
+                            <h1 id="personal_name">><span id="first_name">Alex</span><span class="blink_me">_</span><span id="last_name">Sullivan</span></h1>
 
-                        <h2>
-                            <span id="job">coder</span>
-                            <span id="divider" class="divider">|</span>
-                            <span class="maroon">umass amherst</span> 
-                        </h2>
-                    </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-3" id="contact">
+                            <h2>
+                                <span id="job">coder</span>
+                                <span id="divider" class="divider">|</span>
+                                <span class="maroon">umass amherst</span> 
+                            </h2>
+                        </div>
+                </div>
+
+        </header>
+        <div class="container-fluid" id="home-information">
+            <div class="home-information row">
+                <div class="col-xs-12 col-sm-3 col-md-12" id="contact">
                     <h4>contact</h4>
                     <a id="phone">617 835 4694 </a>
                     <br>
@@ -45,7 +49,7 @@
                     <a id="email">sullivan1513@gmail.com</a>
                 </div>
 
-                <div class="col-sm-3"  id="media">
+                <div class="col-xs-12 col-sm-3 col-md-4"  id="media">
                     <h4>media</h4>
                     <a id="twitter" href="https://twitter.com/Alex_M_Sullivan" target="_blank">twitter</a>
                     <br>
@@ -54,7 +58,7 @@
                     <a id="mapmyrun" href="http://www.mapmyrun.com/profile/24499459/" target="_blank">mapmyrun</a>
                 </div>
 
-                <div class="col-sm-3"  id="create">
+                <div class="col-xs-12 col-sm-3 col-md-4"  id="create">
                     <h4>create</h4>
                     <a id="projects">projects</a>
                     <br>
@@ -63,10 +67,10 @@
                     <a id="blog">blog [N/A]</a>
                 </div>
             </div>
-        </header>
+        </div>
         <div class="container" id="display_projects">
 
-            <div class="row" id="project_display" style="background-color:#001111">
+            <div class="row" id="project_display" style="background-color:#00003D">
                 <div id="project_name" >Liberty Mutual</div>
                 <div class="col-sm-10"  id="project_information">
                     <div class="col-sm-4" id="project_image">
@@ -86,8 +90,31 @@
                 </div>
             </div>
 
-        </div>
+           <div class="row" id="project_display" style="background-color:#00BB11">
+                <div id="project_name" >Emma5</div>
+                <div class="col-sm-10"  id="project_information">
+                    <div class="col-sm-4" id="project_image">
+                        <img src="/img/LM_300x300.jpg" height="250" width="250"></img>  
+                    </div>
+                    <div class="col-sm-6" id="project_description">DESCRIPTION GOES </div>
+                </div>
+            </div>
 
+           <div class="row" id="project_display" style="background-color:#BB0000">
+                <div id="project_name" >FTC</div>
+                <div class="col-sm-10"  id="project_information">
+                    <div class="col-sm-4" id="project_image">
+                        <img src="/img/LM_300x300.jpg" height="250" width="250"></img>  
+                    </div>
+                    <div class="col-sm-6" id="project_description">DESCRIPTION GOES HERE</div>
+                </div>
+            </div>
+
+        </div>
+        <footer class="containter-fluid">
+            <h1>original design</h1>
+
+        </footer>
 
 
 
