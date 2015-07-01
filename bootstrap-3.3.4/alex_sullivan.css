@@ -24,6 +24,7 @@ header {
 }
 
 header .header-information {
+  position: relative;
   width:90%;
   padding-top:50%;
 }
@@ -71,24 +72,30 @@ a {
 
 
 
-.maroon{
-  /*display: inline-block*/
-  margin-top:10px;
-  color: #990033;
-  white-space: nowrap;
-}
 
 #create, #media, #contact {
   display: inline-block;
   padding-right: 20px;
 }
-
+#information-button{
+  position: absolute;
+  bottom:0px;
+  width: 100%;
+  background: black;
+  border:none;
+}
 #play_button {
   height:80px;
 }
 .home-information {
   background-color: #141F1F;
   text-align: center;
+}
+.maroon{
+  /*display: inline-block*/
+  margin-top:10px;
+  color: #990033;
+  white-space: nowrap;
 }
 
 /*@media(max-width: 630px)
