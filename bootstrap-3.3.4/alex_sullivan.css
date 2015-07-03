@@ -65,14 +65,6 @@ a {
   text-align: center;
 }
 
-@mixin centerer {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-
 #create, #media, #contact {
   display: inline-block;
   padding-right: 20px;
@@ -84,13 +76,15 @@ a {
   background: black;
   border:none;
 }
+#information{
+  background-color: black;
+  height:100%;
+}
 #play_button {
   height:80px;
 }
 #name_job{
-/*  padding-top:50%;
-  padding-bottom: 50%;*/
-  /*margin-top:10%;*/
+  padding-top: 35%;
 }
 
 
@@ -100,11 +94,7 @@ a {
   color: #990033;
   white-space: nowrap;
 }
-.vcenter{
-  display: inline-block;
-  vertical-align: center;
-  float:none;
-}
+
 
 /*@media(max-width: 630px)
 {
@@ -122,11 +112,34 @@ a {
     font-size: 35px;
   }
   
-  .homeh4{
+  h4{
+    text-align: left;
+  }
+  header{
+    height:50%;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+  #name_job{
+    padding-top: 166px;
+
+  }
+  #information{
+    height:50%;
     text-align: left;
   }
   .home-information{
-    text-align: left;
+    padding-top: 0%;
+  }
+
+  #content{
+    padding-left: 10%;
+  }
+  #media{
+    padding-left:20%;
+  }
+  #create{
+    padding-left: 30%;
   }
 }
 
@@ -137,7 +150,15 @@ a {
 
 /*// Larger pads*/
 @media only screen and (min-width: 768px) {
-
+  #content{
+    padding-left: 0px;
+  }
+  #media{
+    padding-left:0px;
+  }
+  #create{
+    padding-left: 0px;
+  }
 }
 
 /*// Horizontal pads and laptops*/
