@@ -23,11 +23,6 @@ header {
   height:100%;
 }
 
-header .header-information {
-  position: relative;
-  width:90%;
-  padding-top:50%;
-}
 
 h1 {
   font-family: "Press Start 2P","Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -70,7 +65,12 @@ a {
   text-align: center;
 }
 
-
+@mixin centerer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 
 #create, #media, #contact {
@@ -87,15 +87,23 @@ a {
 #play_button {
   height:80px;
 }
-.home-information {
-  background-color: #141F1F;
-  text-align: center;
+#name_job{
+/*  padding-top:50%;
+  padding-bottom: 50%;*/
+  /*margin-top:10%;*/
 }
+
+
 .maroon{
   /*display: inline-block*/
   margin-top:10px;
   color: #990033;
   white-space: nowrap;
+}
+.vcenter{
+  display: inline-block;
+  vertical-align: center;
+  float:none;
 }
 
 /*@media(max-width: 630px)
