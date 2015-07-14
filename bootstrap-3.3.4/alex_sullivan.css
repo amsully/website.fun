@@ -207,7 +207,9 @@ a {
 
 #project_display{
   display: block;
-  background-color:#FFFFFF;  /*
+  background-color:#FFFFFF;  
+  padding: 5%;
+  /*
   border: 3px solid #333333;
   border-radius: 15px;
   -webkit-border-radius: 15px;*/
@@ -215,12 +217,12 @@ a {
 }
 
 #project_name{
-  font-family: "Press Start 2P","Helvelica Neue", Helveltica, Arial, sans-serif;
-  /*font-weight:;*/
-  font-size:15px;
+  font-family: "Helvelica Neue", Helveltica, Arial, sans-serif;
+  font-weight: 700;
+  font-size:32px;
   line-height:1.5;
-  color:#00b000;
-  text-transform: lowercase;
+  color:#FFFFFF;
+  text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
   letter-spacing: 2px;
   padding: 5px;  
 }
