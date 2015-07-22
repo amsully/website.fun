@@ -1,4 +1,12 @@
 <!DOCTYPE html>
+
+<!--
+****************************************************************************
+
+        HEAD
+
+****************************************************************************
+-->
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -23,7 +31,13 @@
   <body>                                                                
 
 
+<!--
+****************************************************************************
 
+        HEADER (Name, Job, School)
+
+****************************************************************************
+-->
 
     <header class="section-container" id="header">
         <div class="container-fluid" id="name_job">
@@ -58,6 +72,13 @@
         <!--name_job-->
     </header>
 
+<!--
+****************************************************************************
+
+        CONTACT INFORMATION
+
+****************************************************************************
+-->
     <div class="container-fluid" id="information">
         <div class="home-information row">
             <div class="col-xs-12 col-sm-4 col-lg-2" id="contact">
@@ -94,34 +115,215 @@
     </div>
     <!--/information-->
 
-    <div class="container" id="display_projects">
+
+<!--
+****************************************************************************
+
+        PROJECT/JOBS
+
+****************************************************************************
+-->
+    <div class="container-fluid" id="display_projects">
 
         <div class="row" id="project_display" style="background-color:#00003D">
             <div class="col-sm-12" id="project_name" >Liberty Mutual</div>
-            <div class="col-sm-12"  id="project_information">
-            <img class="img-rounded img-responsive" src="/img/LM_300x300.jpg"></img>  
-                <!--project_image-->
 
-                <div class="col-sm-6" id="project_description">DESCRIPTION GOES HERE</div>
-            </div>
-            <!--project_information-->
-        </div>
-        <!--/project_display-->
+            <div id="carousel-projects" class="center-block col-md-4 carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-projects" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-projects" data-slide-to="1"></li>
+                <li data-target="#carousel-projects" data-slide-to="2"></li>
 
-        <div class="row" id="project_display" style="background-color:#BB0000">
-            <div id="project_name" >ESPN</div>
-            <div class="col-sm-10"  id="project_information">
-                <div class="col-sm-4" id="project_image">
-                    <img src="/img/LM_300x300.jpg" height="250" width="250"></img>  
+              </ol>
+             
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img class="img-rounded img-responsive" src="/img/LM_300x300.jpg" alt="...">
+                  <div class="carousel-caption">
+                      <h3>LM.com</h3>
+                  </div>
                 </div>
-                <!--project_image-->
-                
-                <div class="col-sm-6" id="project_description">DESCRIPTION GOES HERE</div>
+                <div class="item">
+                  <img class="img-rounded img-responsive" src="/img/nodejs.png" alt="...">
+                  <div class="carousel-caption">
+                      <h3>Node.js</h3>
+                  </div>
+                </div>
+               <div class="item">
+                  <img class="img-rounded img-responsive" src="/img/Elasticsearch.jpg" alt="...">
+                  <div class="carousel-caption">
+                      <h3>elasticsearch.</h3>
+                  </div>
+                </div>
+              </div>
+             
+              <!-- Controls -->
+              <a class="left carousel-control" href="#carousel-projects" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+              </a>
+              <a class="right carousel-control" href="#carousel-projects" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+              </a>
+            </div> <!-- Carousel -->
+
+            <div class="accordion center-block col-md-8" id="project_description">
+                <div "accordion-group">
+                    <div class="accordion-heading">
+                        <a id="accordion-header" class="accordion-toggle" data-toggle="collapse" data-parent="#project_description" href="#collapseOne">
+                            Software Dev. Intern ...
+                        </a>
+                    </div>
+                    <div id="collapseOne" class="accordion-body collapse in">
+                        <div class="accordion-inner">
+                            <p>
+                                Developed a logging workflow that provided real time analysis of LibertyMutual.com's status. Originally, Splunk was used but I advocated the use of the open source framework elasticsearch. and collaborated with a second internal team to build it out. The technologies involved included Apache Kafka, elastics Kibana and elasticsearch.
+                            </p>
+                            <p>
+                                I also developed the 'hub' for developer to access all logs nationwide in a single location through a Node.js application created off of the express framework as well as ejs for templating.
+                            </p>                        
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!--project_information-->
+
         </div>
         <!--/project_display-->
 
+<div class="row" id="project_display" style="background-color:#D30000">
+            <div class="col-sm-12" id="project_name" >ESPN</div>
+
+            <div id="carousel-espn" class="center-block col-md-4 carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-espn" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-espn" data-slide-to="1"></li>
+                <li data-target="#carousel-espn" data-slide-to="2"></li>
+
+              </ol>
+             
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img class="img-rounded img-responsive" src="/img/espn.png" alt="...">
+                  <div class="carousel-caption">
+                      <h3>ESPN app</h3>
+                  </div>
+                </div>
+                <div class="item">
+                  <img class="img-rounded img-responsive" src="/img/groovy.png" alt="...">
+                  <div class="carousel-caption">
+                      <h3>Groovy (JVM Language)</h3>
+                  </div>
+                </div>
+               <div class="item">
+                  <img class="img-rounded img-responsive" src="/img/Elasticsearch.jpg" alt="...">
+                  <div class="carousel-caption">
+                      <h3>elasticsearch.</h3>
+                  </div>
+                </div>
+              </div>
+             
+              <!-- Controls -->
+              <a class="left carousel-control" href="#carousel-espn" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+              </a>
+              <a class="right carousel-control" href="#carousel-espn" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+              </a>
+            </div> <!-- Carousel -->
+
+            <div class="accordion center-block col-md-8" id="project_description">
+                <div "accordion-group">
+                    <div class="accordion-heading">
+                        <a id="accordion-header" class="accordion-toggle" data-toggle="collapse" data-parent="#project_description" href="#collapseTwo">
+                            Software Dev. Intern ...
+                        </a>
+                    </div>
+                    <div id="collapseTwo" class="accordion-body collapse in">
+                        <div class="accordion-inner">
+                            <p>
+                                Developed an optimized data transfer methodology by moving data processing from mobile devices to ESPN servers. This project was developed in the dynamic programming language Groovy. Entering the internship I had little knowledge of Groovy or the original protocol that I transferred from (an in-house language used by ESPN to process JSON).
+                            </p>
+                            <p>
+                                The result was a program built off the SpringBoot framework and spanned over 5,000 lines of code (over 10,000 with docs/bundled config json/etc) in 10 weeks. The project, named Dark.Binder was inherited by a development team for performance testing and a goal to entirely replace the existing legacy code that runs the backend of the ESPN app and other mobile applicaitons.
+                            </p>                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--/project_display-->
+<div class="row" id="project_display" style="background-color:#00BB11">
+            <div class="col-sm-12" id="project_name" >Emma5</div>
+
+            <div id="carousel-emma5" class="center-block col-md-4 carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-emma5" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-emma5" data-slide-to="1"></li>
+                <li data-target="#carousel-emma5" data-slide-to="2"></li>
+
+              </ol>
+             
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img class="img-rounded img-responsive" src="/img/emma5.jpg" alt="...">
+                  <div class="carousel-caption">
+                      <h3>The Robot</h3>
+                  </div>
+                </div>
+                <div class="item">
+                  <img class="img-rounded img-responsive" src="/img/pdu.jpg" alt="...">
+                  <div class="carousel-caption">
+                      <h3>Part of Power Distribution Unit</h3>
+                  </div>
+                </div>
+               <div class="item">
+                  <img class="img-rounded img-responsive" src="/img/m5_emma5.png" alt="...">
+                  <div class="carousel-caption">
+                      <h3>More Robot</h3>
+                  </div>
+                </div>
+              </div>
+             
+              <!-- Controls -->
+              <a class="left carousel-control" href="#carousel-emma5" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+              </a>
+              <a class="right carousel-control" href="#carousel-emma5" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+              </a>
+            </div> <!-- Carousel -->
+
+            <div class="accordion center-block col-md-8" id="project_description">
+                <div "accordion-group">
+                    <div class="accordion-heading">
+                        <a id="accordion-header" class="accordion-toggle" data-toggle="collapse" data-parent="#project_description" href="#collapseThree">
+                            Software Dev. Intern ...
+                        </a>
+                    </div>
+                    <div id="collapseThree" class="accordion-body collapse in">
+                        <div class="accordion-inner">
+                            <p>
+                                Contributed to an autonomous robot, named Emma5, that was programmed using Arduino. The robot is powered by a 12 volt car battery and contains 8 infrared sensors to navigate it's surroundings. We developed the power distribution unit to prevent short circuiting which had occurred in the past. 
+                            </p>
+                            <p>
+                                I was advised by Charles 'Chuck' Malloch, PhD and worked closely with peer Adam Siegel. This project was undertaken my first semester at UMass Amherst. Some cool gadgets I got my hands on include EagleCAD, thermistors (heat resistors), multimeters, oscilliscopes, and too much sodder. 
+                            </p>
+                            <p>
+                                We also hacked an old Nintendo-64 steering wheel and gas pedals to steer the robot manually using a wireless arduino module. I have since left the project but the Electrical Engineering lab at M5 continues to add functionality.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--/project_display-->
         <div class="row" id="project_display" style="background-color:#00BB11">
             <div id="project_name" >Emma5</div>
             <div class="col-sm-10"  id="project_information">

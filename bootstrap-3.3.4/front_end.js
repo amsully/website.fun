@@ -17,6 +17,8 @@ $(window).on('load resize',function() {
     changeText('#last_name','sullivan')
   	changeText('#job','coder')
   	changeText('#divider','|')
+    $('#collapseOne, #collapseTwo, #collapseThree').collapse("show");
+
   }
 
 });
@@ -97,3 +99,5 @@ if (typeof console === "undefined") {
         log: function() { }
     };
 }
+
+$('#collapseOne, #collapseTwo, #collapseThree').collapse("hide");
