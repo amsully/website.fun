@@ -17,7 +17,7 @@ $(window).on('load resize',function() {
     changeText('#last_name','sullivan')
   	changeText('#job','coder')
   	changeText('#divider','|')
-    $('#collapseOne, #collapseTwo, #collapseThree').collapse("show");
+    $('#collapseOne, #collapseTwo, #collapseThree, #collapseFour').collapse("show");
 
   }
 
@@ -100,4 +100,20 @@ if (typeof console === "undefined") {
     };
 }
 
-$('#collapseOne, #collapseTwo, #collapseThree').collapse("hide");
+$('#collapseOne, #collapseTwo, #collapseThree, #collapseFour').collapse("hide");
+
+// Anchor Scroll
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
