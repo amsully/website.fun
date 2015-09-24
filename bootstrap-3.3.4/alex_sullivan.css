@@ -2,6 +2,12 @@
  * Base structure
  */
 
+p {
+
+  font-size: 16px;
+
+}
+
 html,
 body {
   height: 100%;
@@ -121,8 +127,14 @@ a {
   
 }*/
 
+
+.carousel-control{
+  border-radius: 10px;
+}
+
 #accordion-header{
-  color:#990033;
+  color:#FFCCFF;
+  font-size: 20px;
 }
 
 #project_display{
@@ -152,7 +164,7 @@ a {
   margin-bottom:20px;
 }
 
-#carousel-projects{
+#carousel-projects, #carousel-espn, #carousel-emma5, #carousel-ftc,#carousel-games {
   display: block;
   padding:7px;
   width:300px;

@@ -17,7 +17,7 @@ $(window).on('load resize',function() {
     changeText('#last_name','sullivan')
   	changeText('#job','coder')
   	changeText('#divider','|')
-    $('#collapseOne, #collapseTwo, #collapseThree, #collapseFour').collapse("show");
+    $('#collapseOne, #collapseTwo, #collapseThree, #collapseFour, #collapseFive').collapse("show");
 
   }
 
